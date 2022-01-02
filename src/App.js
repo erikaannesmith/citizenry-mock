@@ -2,14 +2,18 @@ import { useState, useContext } from "react";
 import { Header } from "./components/Header/Header";
 import { PromoBar } from "./components/PromoBar/PromoBar";
 import { NavBar } from "./components/NavBar/NavBar";
+import { SearchDrawer } from "./components/SearchDrawer/SearchDrawer";
 import { SearchBarContext } from "./contexts/SearchBarContext";
 
 function App() {
   const [promoBarOpen, setPromoBarOpen] = useState(true);
+  const [searchBarOpen] = useContext(SearchBarContext);
+
   return (
     <>
       {promoBarOpen && <PromoBar handleClose={() => setPromoBarOpen(false)} />}
       <Header />
+      {searchBarOpen && <SearchDrawer />}
       <NavBar />
 
       <WhateverElse />

@@ -5,31 +5,9 @@
   padding: 20px;
 }
 
-button {
+.header button {
   fill: black;
   border: none;
   background-color: inherit;
 }
 
-.search-drawer {
-  border-top: 1px solid lightgrey;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  height: 175px;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.search-drawer input {
-  width: 900px;
-  background-color: #f2f0f0;
-  color: #504f4f;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  padding: 10px;
-  outline: none;
-}
