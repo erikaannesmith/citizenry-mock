@@ -17,19 +17,18 @@ function App() {
       {searchBarOpen && <SearchDrawer />}
       <NavBar />
 
-      <WhateverElse>
+      <PageContent>
         <Footer />
-      </WhateverElse>
+      </PageContent>
     </>
   );
 }
 
-const WhateverElse = ({ children }) => {
+const PageContent = ({ children }) => {
   const [searchBarOpen, setSearchBarOpen] = useContext(SearchBarContext);
   return (
     <div
       style={{
-        height: "100vh",
         boxShadow: searchBarOpen ? "inset 0 0 0 1000px rgba(0,0,0,.2)" : "none",
         cursor: searchBarOpen ? "pointer" : "auto",
       }}
