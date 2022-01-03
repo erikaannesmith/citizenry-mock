@@ -1,0 +1,52 @@
+
+.nav-section {
+  height: 250px;
+  background-color: white;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.left-panel {
+  display: flex;
+  grid-gap: 10px;
+  flex-direction: column;
+  width: 200px;
+}
+
+.nav-section button {
+  background-color: white;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 15px 0;
+  font-weight: 600;
+  font-size: 15px;
+  color: #504f4f;
+}
+
+.vertical-divider {
+  background-color: lightgrey;
+  height: 100%;
+  width: 1px;
+  margin: 0 40px;
+}
+
+.right-panel {
+  display: flex;
+  grid-gap: 20px;
+}
+
+.promo img {
+  height: 80%;
+}
+
+.promo a {
+  text-decoration: none;
+  color: inherit;
+}
