@@ -3,6 +3,7 @@ import { Header } from "./components/Header/Header";
 import { PromoBar } from "./components/PromoBar/PromoBar";
 import { NavBar } from "./components/NavBar/NavBar";
 import { SearchDrawer } from "./components/SearchDrawer/SearchDrawer";
+import { Footer } from "./components/Footer/Footer";
 import { SearchBarContext } from "./contexts/SearchBarContext";
 
 function App() {
@@ -16,12 +17,14 @@ function App() {
       {searchBarOpen && <SearchDrawer />}
       <NavBar />
 
-      <WhateverElse />
+      <WhateverElse>
+        <Footer />
+      </WhateverElse>
     </>
   );
 }
 
-const WhateverElse = () => {
+const WhateverElse = ({ children }) => {
   const [searchBarOpen, setSearchBarOpen] = useContext(SearchBarContext);
   return (
     <div
@@ -32,7 +35,7 @@ const WhateverElse = () => {
       }}
       onClick={searchBarOpen ? () => setSearchBarOpen(false) : undefined}
     >
-      hello! iz me
+      {children}
     </div>
   );
 };

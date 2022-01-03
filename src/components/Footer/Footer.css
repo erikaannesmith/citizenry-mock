@@ -1,0 +1,29 @@
+.footer {
+  display: grid;
+  margin: 50px;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 30px;
+  
+}
+
+.footer .left-panel {
+  display: flex;
+}
+
+.footer .section-header {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.footer p {
+  font-size: 15px;
+}
+
+.footer img {
+  height: 230px;
+}
+
+.contact-details {
+  padding: 0 30px;
+}
